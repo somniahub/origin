@@ -7,7 +7,7 @@
     </view>
   </view>
   <view class="user_login" wx:else>
-    <navigator url="/pages/login/login">登陆</navigator>
+    <navigator url="/pages/login/login">登录</navigator>
   </view>
 </view>
 <view class="user_content">

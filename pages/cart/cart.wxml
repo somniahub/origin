@@ -2,7 +2,7 @@
 <view class="review_address_row">
   <!-- 收货按钮 -->
   <view class="address_btn" wx:if="{{!address.cityName}}">
-    <button type="primary" plain bindtap="addressChoose">添加收货地址</button>
+    <button type="primary" plain bindtap="addressChoose">获取收货地址</button>
   </view>
   <!-- 收货地显示 -->
   <view class="user_info" wx:else>

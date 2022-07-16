@@ -23,6 +23,8 @@ Page({
         this.Cate = await request({ url: "/categories" });
         wx.setStorageSync('cates', { time: Date.now(), data: this.Cate })
         let leftList = this.Cate.map(v => v.cat_name)
+
+        //初始选择的是‘大家电’，所以为‘大家电’的内容
         let rightList = this.Cate[0].children;
         this.setData({
             leftList,
@@ -36,6 +38,7 @@ Page({
         this.setData({
             tapIndex,
             rightList,
+            //回到顶部
             scrollTop: 0
         })
     },
@@ -45,11 +48,14 @@ Page({
     onLoad: function(options) {
         const Cates = wx.getStorageSync('cates')
         if (!Cates) {
+            //不存在 发送请求获取数据
             this.getCateList()
         } else {
+            //定义缓存的过期时间
             if (Date.now() - Cates.time > 1000 * 10) {
                 this.getCateList()
             } else {
+                //有缓存 存数据
                 this.Cate = Cates.data;
                 let leftList = this.Cate.map(v => v.cat_name)
                 let rightList = this.Cate[0].children;

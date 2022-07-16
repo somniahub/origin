@@ -8,7 +8,7 @@ Page({
     data: {
         //详情数据
         goodInfo: {},
-        //是否被保存
+        //是否被保存（收藏）
         isCollect: false
     },
     GoodInfo: {},

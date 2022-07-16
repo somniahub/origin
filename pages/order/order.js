@@ -43,7 +43,7 @@ Page({
         }]
     },
     onShow(options) {
-        //判断是否登陆
+        //判断是否登录
         const token = wx.getStorageSync('token')
         if (!token) {
             wx.navigateTo({

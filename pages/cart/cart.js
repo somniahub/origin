@@ -60,8 +60,10 @@ Page({
         const { id, opration } = e.currentTarget.dataset;
         const { cart } = this.data;
         const index = cart.findIndex(v => v.goods_id === id);
+
+        //这里获取的是util界面写好的promise形式的showModal
         if (cart[index].num === 1 && opration === -1) {
-            const res = await showModal('是否删除商品')
+            const res = await showModal('是否删除商品')  //传参
             if (res.confirm) {
                 cart.splice(index, 1);
                 this.setCart(cart)

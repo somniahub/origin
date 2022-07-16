@@ -5,14 +5,25 @@ Page({
      * 页面的初始数据
      */
     data: {
-
+      userInfo:{},
+      hasUserInfo: false
     },
-    //登陆
+    //登录
     handleGetUserInfo(e) {
         const { userInfo } = e.detail;
-        wx.setStorageSync('userInfo', userInfo);
-        wx.navigateBack({
-            delta: 1
-        });
+
+        wx.getUserProfile({
+          success: (res) => {
+            this.setData({
+              userInfo: res.userInfo,
+              hasUserInfo: true
+            });
+            wx.setStorageSync('userInfo', userInfo);
+           //跳转回去
+            wx.navigateBack({
+              delta: 1
+            });
+          }
+        })
     }
 })
