@@ -55,7 +55,7 @@
     <view class="main_info_wrap">
       <view class="app_info_item app_info_contact">
         <text>联系客服</text>
-        <text>400-618-4000</text>
+        <text>400-611-400</text>
       </view>
       <navigator url="/pages/feedback/feedback" class="app_info_item">意见反馈</navigator>
       <view class="app_info_item">关于我们</view>
