@@ -13,7 +13,7 @@
  商品列表使用懒加载更新商品，用户触底加载数据
 
  完成搜索功能，进行防抖优化，防止重复输入多次发送请求
- 
+
  封装数据请求，采用异步请求加载数据防止阻塞
 
 
@@ -24,9 +24,9 @@
 
 ## 项目截图
 
-![](https://github.com/somniahub/sudashop/tree/master/projectimg/1.png)
-![](https://github.com/somniahub/sudashop/tree/master/projectimg/2.png)
-![](https://github.com/somniahub/sudashop/tree/master/projectimg/3.png)
-![](https://github.com/somniahub/sudashop/tree/master/projectimg/4.png)
-![](https://github.com/somniahub/sudashop/tree/master/projectimg/5.png)
-![](https://github.com/somniahub/sudashop/tree/master/projectimg/6.png)
+![1](https://github.com/somniahub/sudashop/tree/master/projectimg/1.png)
+![2](https://github.com/somniahub/sudashop/tree/master/projectimg/2.png)
+![3](https://github.com/somniahub/sudashop/tree/master/projectimg/3.png)
+![4](https://github.com/somniahub/sudashop/tree/master/projectimg/4.png)
+![5](https://github.com/somniahub/sudashop/tree/master/projectimg/5.png)
+![6](https://github.com/somniahub/sudashop/tree/master/projectimg/6.png)
