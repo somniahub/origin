@@ -16,11 +16,13 @@
 
  封装数据请求，采用异步请求加载数据防止阻塞
 
+## 感悟
+  做这个项目的同时也在不断探索新的技能
+  
+  这是我写的有关本项目技术的博客：
 
-## 使用说明
+  
 
-1.  后端接口没有实时更新会导致有些请求不能得到完整数据，可以使用更新后的接口
-2.  该小程序仅供学习与交流
 
 ## 项目截图
 
@@ -30,3 +32,8 @@
 ![4](https://github.com/somniahub/sudashop/tree/master/projectimg/4.png)
 ![5](https://github.com/somniahub/sudashop/tree/master/projectimg/5.png)
 ![6](https://github.com/somniahub/sudashop/tree/master/projectimg/6.png)
+
+## 使用说明
+
+1.  后端接口没有实时更新会导致有些请求不能得到完整数据，可以使用更新后的接口
+2.  该小程序仅供学习与交流
